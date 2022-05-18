@@ -162,6 +162,9 @@ abstract class BarcodeGenerator
             case self::TYPE_EAN_13:
                 return new TypeEan13();
 
+            case self::TYPE_EAN_BOOK:
+                return new TypeEanBook();
+
             case self::TYPE_UPC_A:
                 return new TypeUpcA();
 
