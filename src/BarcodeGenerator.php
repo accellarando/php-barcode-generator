@@ -44,6 +44,7 @@ use Picqer\Barcode\Types\TypeCode39ExtendedChecksum;
 use Picqer\Barcode\Types\TypeCode93;
 use Picqer\Barcode\Types\TypeEan13;
 use Picqer\Barcode\Types\TypeEan8;
+use Picqer\Barcode\Types\TypeEanBook;
 use Picqer\Barcode\Types\TypeIntelligentMailBarcode;
 use Picqer\Barcode\Types\TypeInterleaved25;
 use Picqer\Barcode\Types\TypeInterleaved25Checksum;
@@ -78,10 +79,11 @@ abstract class BarcodeGenerator
     const TYPE_CODE_128_A = 'C128A';
     const TYPE_CODE_128_B = 'C128B';
     const TYPE_CODE_128_C = 'C128C';
-    const TYPE_EAN_2 = 'EAN2'; // 2-Digits UPC-Based Extention
-    const TYPE_EAN_5 = 'EAN5'; // 5-Digits UPC-Based Extention
+    const TYPE_EAN_2 = 'EAN2'; // 2-Digits UPC-Based Extension
+    const TYPE_EAN_5 = 'EAN5'; // 5-Digits UPC-Based Extension
     const TYPE_EAN_8 = 'EAN8';
     const TYPE_EAN_13 = 'EAN13';
+    const TYPE_EAN_BOOK = 'EAN13+'; // 18 digits: EAN13 + supplemental EAN5
     const TYPE_UPC_A = 'UPCA';
     const TYPE_UPC_E = 'UPCE';
     const TYPE_MSI = 'MSI'; // MSI (Variation of Plessey code)
